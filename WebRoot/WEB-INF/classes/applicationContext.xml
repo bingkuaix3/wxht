@@ -39,32 +39,32 @@
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 	<tx:annotation-driven transaction-manager="transactionManager" />
-	<bean id="userDao" class="com.wxht.dao.UserDao">
+	<bean id="userDao" class="com.wxht.dao.user.UserDao">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory" />
 		</property>
 	</bean>
-	<bean id="resourceDao" class="com.wxht.dao.ResourceDao">
+	<bean id="resourceDao" class="com.wxht.dao.resource.ResourceDao">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory" />
 		</property>
 	</bean>
-	<bean id="resourceTypeDao" class="com.wxht.dao.ResourceTypeDao">
+	<bean id="resourceTypeDao" class="com.wxht.dao.resourcetype.ResourceTypeDao">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory" />
 		</property>
 	</bean>
-	<bean id="pageDao" class="com.wxht.dao.PageDao">
+	<bean id="pageDao" class="com.wxht.dao.page.PageDao">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory" />
 		</property>
 	</bean>
-	<bean id="pageTypeDao" class="com.wxht.dao.PageTypeDao">
+	<bean id="pageTypeDao" class="com.wxht.dao.pagetype.PageTypeDao">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory" />
 		</property>
 	</bean>
-	<bean id="adminDao" class="com.wxht.dao.AdminDao">
+	<bean id="adminDao" class="com.wxht.dao.admin.AdminDao">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory" />
 		</property>
